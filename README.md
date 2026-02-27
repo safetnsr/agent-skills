@@ -50,33 +50,24 @@ npx @safetnsr/vibe-check --fix --json
 
 ## install
 
-skills follow the [agentskills.io](https://agentskills.io) open standard. each agent has its own install mechanism — pick yours below.
-
-### claude code
-
-```
-/plugin marketplace add safetnsr/agent-skills
-/plugin install vibe-check@safetnsr-agent-skills
-/plugin install ai-ready@safetnsr-agent-skills
-```
-
-### cursor / gemini cli / other agents
-
-clone and point your skills directory at the `skills/` folder:
+works with 40+ agents: Claude Code, Cursor, GitHub Copilot, Cline, Gemini CLI, Goose, Windsurf, and more.
 
 ```bash
-git clone https://github.com/safetnsr/agent-skills ~/.agent-skills
+# install all skills
+npx skills add safetnsr/agent-skills
+
+# install specific skill
+npx skills add safetnsr/agent-skills --skill vibe-check
+npx skills add safetnsr/agent-skills --skill ai-ready
+
+# install globally (available across all projects)
+npx skills add safetnsr/agent-skills -g
+
+# install to specific agent only
+npx skills add safetnsr/agent-skills --skill vibe-check -a claude-code
 ```
 
-then configure your agent to scan `~/.agent-skills/skills/` for skills (see your agent's docs for the exact config path).
-
-### manual
-
-copy any skill folder into your agent's configured skills directory:
-
-```bash
-cp -r skills/vibe-check /path/to/your/agent/skills/
-```
+the CLI auto-detects which agents you have installed and symlinks skills to the right directories.
 
 ## compatibility
 
