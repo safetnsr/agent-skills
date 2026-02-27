@@ -1,0 +1,42 @@
+{
+  "name": "safetnsr-agent-skills",
+  "owner": {
+    "name": "safetnsr",
+    "email": "info@wrkr.sh"
+  },
+  "metadata": {
+    "description": "Agent skills for AI coding agents — vibe-check and ai-ready",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "vibe-check",
+      "description": "Scan git diffs for AI agent anti-patterns before pushing. Catches hardcoded secrets, stubbed tests, deleted error handlers, empty catch blocks. Auto-fix support.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/vibe-check"
+      ]
+    },
+    {
+      "name": "ai-ready",
+      "description": "Map blast radius before editing JS/TS files. Shows incoming deps, circular deps, downstream untested files, and prioritized action items.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/ai-ready"
+      ]
+    },
+    {
+      "name": "all-skills",
+      "description": "All safetnsr agent skills: vibe-check, ai-ready, and skill-best-practices authoring guide.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/vibe-check",
+        "./skills/ai-ready",
+        "./skills/skill-best-practices"
+      ]
+    }
+  ]
+}
