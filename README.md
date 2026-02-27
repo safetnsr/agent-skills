@@ -16,7 +16,7 @@ scan agent-introduced anti-patterns in git diffs before pushing.
 npx @safetnsr/vibe-check --fix --json
 ```
 
-[→ skill](./vibe-check/SKILL.md) · [→ npm](https://www.npmjs.com/package/@safetnsr/vibe-check) · [→ github](https://github.com/safetnsr/vibe-check)
+[→ skill](./skills/vibe-check/SKILL.md) · [→ npm](https://www.npmjs.com/package/@safetnsr/vibe-check) · [→ github](https://github.com/safetnsr/vibe-check)
 
 ---
 
@@ -32,7 +32,7 @@ map blast radius before editing files in a JS/TS codebase.
 npx @safetnsr/ai-ready src/auth/ --summary --json
 ```
 
-[→ skill](./ai-ready/SKILL.md) · [→ npm](https://www.npmjs.com/package/@safetnsr/ai-ready) · [→ github](https://github.com/safetnsr/ai-ready)
+[→ skill](./skills/ai-ready/SKILL.md) · [→ npm](https://www.npmjs.com/package/@safetnsr/ai-ready) · [→ github](https://github.com/safetnsr/ai-ready)
 
 ---
 
@@ -40,7 +40,7 @@ npx @safetnsr/ai-ready src/auth/ --summary --json
 
 ```bash
 # before editing
-npx @safetnsr/ai-ready [target] --summary --json
+npx @safetnsr/ai-ready src/ --summary --json
 
 # ... edit files ...
 
