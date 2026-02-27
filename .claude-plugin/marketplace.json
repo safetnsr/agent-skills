@@ -28,13 +28,21 @@
       ]
     },
     {
+      "name": "session-distill",
+      "description": "Distill recurring context from AI agent sessions into CLAUDE.md.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/session-distill"]
+    },
+    {
       "name": "all-skills",
-      "description": "All safetnsr agent skills: vibe-check, ai-ready, and skill-best-practices authoring guide.",
+      "description": "All safetnsr agent skills: vibe-check, ai-ready, session-distill, and skill-best-practices authoring guide.",
       "source": "./",
       "strict": false,
       "skills": [
         "./skills/vibe-check",
         "./skills/ai-ready",
+        "./skills/session-distill",
         "./skills/skill-best-practices"
       ]
     }
