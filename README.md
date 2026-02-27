@@ -50,34 +50,33 @@ npx @safetnsr/vibe-check --fix --json
 
 ## install
 
-### claude code (recommended)
+skills follow the [agentskills.io](https://agentskills.io) open standard. each agent has its own install mechanism — pick yours below.
+
+### claude code
 
 ```
 /plugin marketplace add safetnsr/agent-skills
-```
-
-then install individual skills:
-
-```
 /plugin install vibe-check@safetnsr-agent-skills
 /plugin install ai-ready@safetnsr-agent-skills
 ```
 
-or install everything at once:
+### cursor / gemini cli / other agents
 
-```
-/plugin install all-skills@safetnsr-agent-skills
-```
-
-### other agents (agentskills.io compatible)
-
-clone the repo and point your agent's skills directory at it:
+clone and point your skills directory at the `skills/` folder:
 
 ```bash
-git clone https://github.com/safetnsr/agent-skills
+git clone https://github.com/safetnsr/agent-skills ~/.agent-skills
 ```
 
-skills are in `./skills/vibe-check` and `./skills/ai-ready`.
+then configure your agent to scan `~/.agent-skills/skills/` for skills (see your agent's docs for the exact config path).
+
+### manual
+
+copy any skill folder into your agent's configured skills directory:
+
+```bash
+cp -r skills/vibe-check /path/to/your/agent/skills/
+```
 
 ## compatibility
 
